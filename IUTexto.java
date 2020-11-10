@@ -9,7 +9,7 @@ public class IUTexto
     private CalculadoraOctal calculadora;
     private PintorFiguras pintor;
 
-    /**
+    /**    
      * Constructor  
      */
     public IUTexto(CalculadoraOctal calculadora, PintorFiguras pintor)
