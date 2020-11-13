@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 /**
  *  Clase que dibuja una figura 
  * 
@@ -21,7 +21,20 @@ public class PintorFiguras
      */
     public  void dibujarFigura(int altura) {
         
-    }
+      for(int fila = 1; altura <= fila; fila++){
+            System.out.println(CAR1 * ANCHO_BLOQUE);
+                if(fila > 1){
+                    System.out.print(CAR1 * ANCHO_BLOQUE + CAR2 * ANCHO_BLOQUE);
+                
+                }
+            for (int col = 1; altura <= col; col++){
+                System.out.print("\n");
+
+            }
+        }
+        System.out.println();
+    
+}
 
     /**
      * Método privado de ayuda que escribe n espacios en la misma línea

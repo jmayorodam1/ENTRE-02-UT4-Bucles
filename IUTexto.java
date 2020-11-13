@@ -40,11 +40,29 @@ public class IUTexto
      */
     private void hacerSumasOctales()
     {
+        System.out.print('\u000C');
+        System.out.println("Teclee numero1: ");
+        int numero1 = teclado.nextInt();
+        System.out.println("Teclee numero2: ");
+        int numero2 = teclado.nextInt();
+        int octal = 0;
         
         
+        if(numero1 != octal){
 
+            while (numero1 != 0){
+                int resto = numero1 % 10;
+                if(resto == 8 || resto == 9){
+                    System.out.println("No es octal");
+                }
+                numero1 /= 10;
+            }
+            
+
+        }
+
+        
     }
-
     /**
      *  Pide al usuario un valor de altura, 
      *  valida que sea correcto (un valor entre 1 y 10)
@@ -53,7 +71,7 @@ public class IUTexto
 
     private void dibujarFiguras()
     {
-        
+
     }
 
 }

@@ -17,9 +17,15 @@ public class Utilidades
      * (usa bucles while)
      */
     public static boolean estaEnOctal(int n) {
-         
+        
+       while (n != 0){
+            int resto = n % 10;
+            if(resto == 8 || resto == 9){
+                return false;
+            }
+            n /= 10;
+        }
         return true;
-
     }
 
     /**
@@ -29,11 +35,15 @@ public class Utilidades
      * (usa bucles while)
      */
     public static int contarCifras(int n) {
-         
-        return 0;
+        int cantidad = 0;
+        int numero = n;
 
+        while (numero > 0){
+            numero = numero/10;
+            cantidad++;
+        }
+
+        return cantidad;
     }
 
-   
-    
 }
